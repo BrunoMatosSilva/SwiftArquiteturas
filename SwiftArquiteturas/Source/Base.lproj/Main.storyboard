@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="9G6-hE-hKA">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="bXN-nz-42e" customClass="LoginViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="bXN-nz-42e" customClass="LoginViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ylm-Iq-jjI">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Entrar"/>
                                 <connections>
-                                    <action selector="openButtonTap:" destination="bXN-nz-42e" eventType="touchUpInside" id="rcq-Gc-8Y7"/>
+                                    <action selector="openButtonTap:" destination="bXN-nz-42e" eventType="touchUpInside" id="BYi-ng-lP7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-dJ-pLi">
@@ -59,7 +59,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Registrar"/>
                                 <connections>
-                                    <action selector="registerButtonTap:" destination="bXN-nz-42e" eventType="touchUpInside" id="K5R-DT-dxF"/>
+                                    <action selector="registerButtonTap:" destination="bXN-nz-42e" eventType="touchUpInside" id="KWU-pZ-5Zr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,10 +85,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="UFd-8B-xxP" id="wyq-mN-18o"/>
-                        <outlet property="openButtonTapped" destination="Q8x-17-XJ1" id="F1P-TS-1B4"/>
-                        <outlet property="passwordTextField" destination="F8O-4s-F77" id="EJ0-Ee-Zcj"/>
-                        <outlet property="registerButtonTapped" destination="KOD-dJ-pLi" id="Tt0-qw-C51"/>
+                        <outlet property="emailTextField" destination="UFd-8B-xxP" id="TdQ-RC-rHg"/>
+                        <outlet property="passwordTextField" destination="F8O-4s-F77" id="CSX-Sa-VfU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCc-DD-aS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -98,7 +96,7 @@
         <!--Register View Controller-->
         <scene sceneID="8hA-O8-O9R">
             <objects>
-                <viewController storyboardIdentifier="RegisterViewController" id="fWZ-21-3C4" customClass="RegisterViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registerViewController" id="fWZ-21-3C4" customClass="RegisterViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n9q-fP-1sH">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +143,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Registrar"/>
                                 <connections>
-                                    <action selector="registerButtonTap:" destination="fWZ-21-3C4" eventType="touchUpInside" id="Egn-yB-voX"/>
+                                    <action selector="registerButtonTap:" destination="fWZ-21-3C4" eventType="touchUpInside" id="2rY-83-A5r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Da-Tx-Ggu">
@@ -157,7 +155,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Entrar"/>
                                 <connections>
-                                    <action selector="openButtonTap:" destination="fWZ-21-3C4" eventType="touchUpInside" id="aHL-Oh-TJe"/>
+                                    <action selector="openButtonTap:" destination="fWZ-21-3C4" eventType="touchUpInside" id="0hO-Bx-v69"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,9 +186,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="confirmPasswordTextField" destination="Ejf-J6-of6" id="dsJ-hF-4hI"/>
-                        <outlet property="emailTextField" destination="ljU-Dp-Kky" id="fH5-w0-Obp"/>
-                        <outlet property="passwordTextField" destination="D3W-ae-56O" id="GYf-BU-2z1"/>
+                        <outlet property="confirmPasswordTextField" destination="Ejf-J6-of6" id="v5Z-u2-rwl"/>
+                        <outlet property="emailTextField" destination="ljU-Dp-Kky" id="RE8-XR-Txn"/>
+                        <outlet property="passwordTextField" destination="D3W-ae-56O" id="O5I-td-kgw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbz-YE-IG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -200,7 +198,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +211,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="OW2-cI-Q4N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vax-u5-Q8b"/>
                             <constraint firstItem="OW2-cI-Q4N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l0i-6z-S1e"/>
@@ -228,6 +226,9 @@
     <resources>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
