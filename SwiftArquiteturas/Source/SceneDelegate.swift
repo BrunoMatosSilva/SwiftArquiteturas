@@ -14,17 +14,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        self.window = UIWindow(windowScene: windowScene)
+        window = UIWindow(windowScene: windowScene)
         self.window?.makeKeyAndVisible()
         
-        let navigationController = UINavigationController()
+        let viewController = LoginViewController()
+        
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
         navigationController.navigationBar.prefersLargeTitles = true
-        navigationController.navigationBar.backgroundColor = .viewBackgroundColor
+        navigationController.navigationBar.backgroundColor = .systemMint
         
         self.window?.rootViewController = navigationController
-        
-        let coordinator = LoginCoordinator(navigationController: navigationController)
-        coordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
